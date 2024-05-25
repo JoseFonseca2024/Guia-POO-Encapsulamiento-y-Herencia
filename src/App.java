@@ -11,6 +11,8 @@ public class App {
         System.out.println("Mantenimiento del auto: ");
         auto.realizarMantenimiento();
 
+        auto.CalcularcostoMantenimiento(0.5, 500.00);
+
         System.out.println("Información del Camion");
         camion.mostrarinfo();
 

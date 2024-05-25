@@ -14,6 +14,14 @@ public class Auto extends VehiculoPasajeros {
         this.tipoCombustible = tipoCombustible;
     }
 
+    public double CalcularcostoMantenimiento (double costoporkilometro, double kilomentrosrecorridos) {
+        System.out.println("El costo por kilometro es: "+costoporkilometro);
+        System.out.println("Los kilometros recorridos han sido. "+kilomentrosrecorridos+" KM");
+        double Totalcosto = costoporkilometro * kilomentrosrecorridos;
+        System.out.println("El costo total del mantenimiento es: "+Totalcosto);
+        return Totalcosto;
+    }
+
     @Override
     public void mostrarinfo() {
         super.mostrarinfo();
